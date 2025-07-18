@@ -32,8 +32,8 @@ The model is trained on the **FB-CC Dataset** (1,336 annotated FBMS images, 18â€
 
 ## Demonstration
 
-![Watch the demo](media/demo_video.gif)
-*(Click to view full video)*
+![Watch the demo](media/demo.png)
+![Watch the res](media/res.png)
 
 ---
 
