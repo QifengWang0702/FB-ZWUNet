@@ -30,6 +30,22 @@ The model is trained on the **FB-CC Dataset** (1,336 annotated FBMS images, 18â€
 
 ---
 
+## Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/<your-username>/FB-ZWUNet.git
+cd FB-ZWUNet
+
+# Option 1: Install via pip
+pip install -r src/env/requirements.txt
+
+# Option 2: Create conda environment
+conda env create -f src/env/environment.yml
+conda activate fb-zwunet
+```
+---
 ## Demonstration
 
 ![Watch the demo](media/demo.png)
