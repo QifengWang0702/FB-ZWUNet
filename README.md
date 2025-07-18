@@ -52,3 +52,10 @@ If you use this work, please cite:
   doi={10.1016/j.bspc.2025.107499}
 }
 ```
+
+---
+
+## Contact
+For **data requests, academic collaborations, or presentation materials**:  
+- **Email**: [wqf970702@mail.dlut.edu.cn](mailto:wqf970702@mail.dlut.edu.cn)  
+- **ResearchGate**: [Qifeng Wang](https://www.researchgate.net/profile/Qifeng-Wang-9?ev=hdr_xprf)
