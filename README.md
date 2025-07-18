@@ -97,8 +97,8 @@ The script will output:
 ---
 ## Demonstration
 <p align="center">
-  <img src="media/demo.png" alt="Watch the demo" width="300"/>
-  <img src="media/res.png" alt="Watch the results" width="300"/>
+  <img src="media/demo.png" alt="Watch the demo" width="600"/><br>
+  <img src="media/res.png" alt="Watch the results" width="800"/>
 </p>
 
 ---
