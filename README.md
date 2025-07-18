@@ -46,6 +46,53 @@ conda env create -f src/env/environment.yml
 conda activate fb-zwunet
 ```
 ---
+## Dataset Preparation
+Organize your dataset as:
+```bash
+datasets/
+  ├── train/
+  │    ├── images/   # training ultrasound images
+  │    └── labels/   # corresponding segmentation masks
+  ├── val/
+  │    ├── images/
+  │    └── labels/
+  └── test/
+       ├── images/
+       └── labels/
+```
+Images should be normalized (e.g., using src/common/normalizeImages.py) and resized to 128x128.
+---
+
+## Training
+Use main-3.0.py to train the network. You can specify the model architecture via the --model argument.
+For the recommended Shape-Improved ZAM-WAM UNet:
+```bash
+python src/main-3.0.py \
+  --model Shape_Improved_ZAM_WAM_Unet \
+  --train datasets/train \
+  --val datasets/val \
+  --epochs 100 \
+  --batch-size 8 \
+  --lr 1e-4 \
+  --output checkpoints/fb-zwunet
+```
+All logs, checkpoints, and training curves will be stored under checkpoints/fb-zwunet/.
+---
+
+## Testing
+To evaluate the trained model on the test set:
+```bash
+python src/test-3.0.py \
+  --model Shape_Improved_ZAM_WAM_Unet \
+  --weights checkpoints/fb-zwunet/best_model.pth \
+  --data datasets/test/images \
+  --output results/
+```
+The script will output:
+-	Quantitative metrics (Dice, IoU, Hausdorff Distance) in results/metrics.txt.
+- Visual segmentation overlays in results/visuals/.
+
+---
 ## Demonstration
 
 ![Watch the demo](media/demo.png)
