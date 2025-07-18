@@ -61,6 +61,7 @@ datasets/
        └── labels/
 ```
 Images should be normalized (e.g., using src/common/normalizeImages.py) and resized to 128x128.
+
 ---
 
 ## Training
@@ -77,6 +78,7 @@ python src/main-3.0.py \
   --output checkpoints/fb-zwunet
 ```
 All logs, checkpoints, and training curves will be stored under checkpoints/fb-zwunet/.
+
 ---
 
 ## Testing
@@ -94,9 +96,10 @@ The script will output:
 
 ---
 ## Demonstration
-
-![Watch the demo](media/demo.png)
-![Watch the res](media/res.png)
+<p align="center">
+  <img src="media/demo.png" alt="Watch the demo" width="300"/>
+  <img src="media/res.png" alt="Watch the results" width="300"/>
+</p>
 
 ---
 
